@@ -16,7 +16,7 @@ function App() {
   }
 
   return (
-    <ul>
+    <ul className="text-3xl font-bold underline">
       {countries.map((country) => (
         <li key={country.name}>{country.name}</li>
       ))}
