@@ -1,9 +1,11 @@
+import Button from '../components/Button';
 
 const Header = () => {
   return (
-    <header>
-      <div className = "flex flex-row items-center justify-center">
-        <h1 className = "flex flex-col items-center font-bold text-3xl text-[#BB2525]">
+    <header class = "p-8 bg-[#FFF5E0]">
+      <a href = "/">
+      <div class = "flex flex-row items-center justify-center">
+        <h1 class= "flex flex-col items-center font-bold text-3xl text-[#BB2525]">
           <span>
             Widget
           </span>
@@ -11,10 +13,25 @@ const Header = () => {
             Point
           </span>
         </h1>
-        <div className = "p-3 text-[#BB2525] font-bold text-7xl">
+        <div class = "p-5 text-[#BB2525] font-bold text-7xl">
           W
         </div>
       </div>
+      </a>
+      <nav class = "flex flex-row justify-center pt-6">
+        <a href = "/">
+        <Button label = "Home"/>
+        </a>
+        <a href = "/">
+        <Button label = "Pricing"/>
+        </a>
+        <a href = "/">
+        <Button label = "Contact Us"/>
+        </a>
+        <a href = "/">
+        <Button label = "Account"/>
+        </a>
+      </nav>
     </header>
   )
 }

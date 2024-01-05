@@ -1,22 +1,21 @@
-import { ShowTable, Header } from './sections';
+import { ShowTable, Header, Hero } from './sections';
 
 function App() {
 
   return (
     <>
-      <header className = "p-8 bg-[#FFF5E0]">
+      <header class = "shadow-md">
         <Header/>
       </header>
-      <section>
-        Navbar
+      <section class = "">
+        <Hero/>
       </section>
-      <section>
-        Hero
+      <section class = "bg-dashing-pink p-6">
       </section>
-      <section>
-        BuyWidgets
+      <section class = "bg-cweam p-20">
+
       </section>
-      <section className = "bg-[#141E46]">
+      <section class = "bg-[#141E46]">
         Footer
       </section>
     </>
