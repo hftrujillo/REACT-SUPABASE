@@ -1,4 +1,4 @@
-import { ShowTable, Header, Hero } from './sections';
+import { ShowTable, Header, Hero, Footer } from './sections';
 
 function App() {
 
@@ -12,11 +12,8 @@ function App() {
       </section>
       <section class = "bg-dashing-pink p-6">
       </section>
-      <section class = "bg-cweam p-20">
-
-      </section>
       <section class = "bg-[#141E46]">
-        Footer
+        <Footer/>
       </section>
     </>
   );
