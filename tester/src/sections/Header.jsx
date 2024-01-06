@@ -19,17 +19,17 @@ const Header = () => {
       </div>
       </a>
       <nav class = "flex flex-row justify-center pt-6">
-        <a href = "/">
-        <Button label = "Home"/>
+        <a href = "/Home">
+          <Button label = "Home"/>
         </a>
         <a href = "/">
-        <Button label = "Pricing"/>
+          <Button label = "Pricing"/>
         </a>
         <a href = "#contact us">
-        <Button label = "Contact Us"/>
+          <Button label = "Contact Us"/>
         </a>
-        <a href = "/">
-        <Button label = "Account"/>
+        <a href = "/Login">
+          <Button label = "Account"/>
         </a>
       </nav>
     </header>

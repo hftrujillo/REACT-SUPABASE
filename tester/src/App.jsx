@@ -1,21 +1,19 @@
-import { ShowTable, Header, Hero, Footer } from './sections';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home, Login } from './pages';
 
 function App() {
 
   return (
-    <>
-      <header class = "shadow-md">
-        <Header/>
-      </header>
-      <section class = "">
-        <Hero/>
-      </section>
-      <section class = "bg-dashing-pink p-6">
-      </section>
-      <section class = "bg-[#141E46]">
-        <Footer/>
-      </section>
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route index element = {<Home/>}/>
+          <Route path = "/Home" element = {<Home/>}/>
+          <Route path = "/Login" element = {<Login/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
