@@ -28,7 +28,7 @@ const Header = () => {
         <a href = "#contact us">
           <Button label = "About Us"/>
         </a>
-        <a href = "/Login">
+        <a href = "/CreateAccount">
           <Button label = "Account"/>
         </a>
       </nav>

@@ -16,7 +16,7 @@ const Hero = () => {
             <h2 class = "pl-20 pb-8 lg:max-w-lg info-text text-navy-sucks text-xl">
               Discover our newest and most popular widgets we have to offer to the market, create an account and sign up to our newsletter for widget deals and coupons.
             </h2>
-            <PinkButton label = "Register" class = ""/>
+            <PinkButton label = "Register" class = ""></PinkButton>
           </div>
       </div>
     </hero>

@@ -2,6 +2,7 @@
 const Footer = () => {
   return (
     <footer class = "text-[#849bf5] bg-[#141E46]">
+        <section class = "bg-dashing-pink p-6"/>
         <header class = "flex gap-40 pl-20 pt-10">
             <div>
                 <h1 class = "font-bold pb-2 text-2xl flex justify-center">MENU</h1>
