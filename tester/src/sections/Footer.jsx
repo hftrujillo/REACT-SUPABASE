@@ -7,10 +7,10 @@ const Footer = () => {
             <div>
                 <h1 class = "font-bold pb-2 text-2xl flex justify-center">MENU</h1>
                 <ul class = "flex flex-col items-center">
-                    <li class = "hover:text-[#9eb1fa]"><a href = "/">Home</a></li>
-                    <li class = "hover:text-[#9eb1fa]"><a href = "/">Pricing</a></li>
-                    <li class = "hover:text-[#9eb1fa]"><a href = "/">Contact Us</a></li>
-                    <li class = "hover:text-[#9eb1fa]"><a href = "/">Account</a></li>
+                    <li class = "hover:text-[#9eb1fa]"><a href = "/Home">Home</a></li>
+                    <li class = "hover:text-[#9eb1fa]"><a href = "/Payment">Pricing</a></li>
+                    <li class = "hover:text-[#9eb1fa]"><a href = "/">About Us</a></li>
+                    <li class = "hover:text-[#9eb1fa]"><a href = "/CreateAccount">Account</a></li>
                 </ul>
             </div>
             <div>

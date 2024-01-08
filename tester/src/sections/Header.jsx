@@ -22,7 +22,7 @@ const Header = () => {
         <a href = "/Home">
           <Button label = "Home"/>
         </a>
-        <a href = "/">
+        <a href = "/Payment">
           <Button label = "Pricing"/>
         </a>
         <a href = "#contact us">
