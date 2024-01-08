@@ -15,13 +15,6 @@ const handleSignOut = async () => {
   }
 };
 
-const handleSignIn = async () => {
-
-  try {
-    const { error } = await supabase.auth.
-  }
-}
-
 const CreateAccount = () => {
   return (
     <div>
