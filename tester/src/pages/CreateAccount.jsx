@@ -1,12 +1,27 @@
 import { Header, Footer } from '../sections';
 import { Auth } from '@supabase/auth-ui-react';
-import { ThemeSupa } from '@supabase/auth-ui-shared';
 import { supabase } from '../Supabase';
+import ProButton from '../components/ProButton';
+
+const handleSignOut = async () => {
+  try {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      throw new Error(error.message);
+    }
+    // Redirect or perform additional actions after successful signout
+  } catch (error) {
+    console.error('Sign out error:', error.message);
+  }
+};
 
 const CreateAccount = () => {
   return (
-    <createAccount>
+    <div>
         <Header />
+        <div class = "flex justify-center pb-5 bg-cweam">
+          <ProButton label = "Logout" onClick = {handleSignOut}></ProButton>
+        </div>
         <Auth supabaseClient={supabase} providers={['google']} appearance={{
 
             extend: false,
@@ -20,7 +35,7 @@ const CreateAccount = () => {
             }
         }}/>
         <Footer />
-    </createAccount>
+    </div>
   )
 }
 
