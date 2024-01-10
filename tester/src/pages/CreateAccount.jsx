@@ -1,20 +1,28 @@
 import { Header, Footer } from '../sections';
 import { Auth } from '@supabase/auth-ui-react';
 import { supabase } from '../Supabase';
-import ProButton from '../components/ProButton';
 import { useNavigate } from 'react-router-dom';
 
 const CreateAccount = () => {
 
-  const navigate = useNavigate();
-
-  supabase.auth.onAuthStateChange(async (event) => {
-    if (event !== "SIGNED_OUT") {
-      navigate("/Account")
+  supabase.auth.onAuthStateChange((event, session) => {
+    if (event === 'SIGNED_IN') {
+      console.log('SIGNED_IN', session);
+    } else if (event === 'SIGNED_OUT') {
+      console.log('SIGNED_OUT', session);
+      [
+        window.localStorage,
+        window.sessionStorage,
+      ].forEach((storage) => {
+        Object.entries(storage)
+          .forEach(([key]) => {
+            storage.removeItem(key)
+          })
+      })
     } else {
-      navigate("/")
+      console.log("No action taken.")
     }
-  });
+  })
 
   return (
     <div>

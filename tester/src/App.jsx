@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home, CreateAccount, Payment, Account } from './pages';
 
