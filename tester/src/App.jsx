@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Home, CreateAccount, Payment } from './pages';
+import { Home, CreateAccount, Payment, Account } from './pages';
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
           <Route path = "/Home" element = {<Home/>}/>
           <Route path = "/CreateAccount" element = {<CreateAccount/>}/>
           <Route path = "/Payment" element = {<Payment/>}/>
+          <Route path = "/Account" element = {<Account/>}/>
         </Routes>
       </BrowserRouter>
     </div>

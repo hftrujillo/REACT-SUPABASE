@@ -2,25 +2,24 @@ import { Header, Footer } from '../sections';
 import { Auth } from '@supabase/auth-ui-react';
 import { supabase } from '../Supabase';
 import ProButton from '../components/ProButton';
-
-const handleSignOut = async () => {
-  try {
-    const { error } = await supabase.auth.signOut();
-    if (error) {
-      throw new Error(error.message);
-    }
-    // Redirect or perform additional actions after successful signout
-  } catch (error) {
-    console.error('Sign out error:', error.message);
-  }
-};
+import { useNavigate } from 'react-router-dom';
 
 const CreateAccount = () => {
+
+  const navigate = useNavigate();
+
+  supabase.auth.onAuthStateChange(async (event) => {
+    if (event !== "SIGNED_OUT") {
+      navigate("/Account")
+    } else {
+      navigate("/")
+    }
+  });
+
   return (
     <div>
         <Header />
         <div class = "flex justify-center pb-5 bg-cweam">
-          <ProButton label = "Logout" onClick = {handleSignOut}></ProButton>
         </div>
         <Auth supabaseClient={supabase} providers={['google']} appearance={{
 
