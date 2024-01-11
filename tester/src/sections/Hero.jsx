@@ -2,7 +2,7 @@ import PinkButton from '../components/PinkButton';
 
 const Hero = () => {
   return (
-    <hero>
+    <section>
       <div className="bg-cweam">
           <h1 className = "text-soft-red font-bold flex flex-col items-start pl-16 pt-12 pb-12 text-8xl ">
               <span>
@@ -21,7 +21,7 @@ const Hero = () => {
             </a>
           </div>
       </div>
-    </hero>
+    </section>
   )
 }
 
