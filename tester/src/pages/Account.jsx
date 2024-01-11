@@ -47,8 +47,10 @@ const Account = () => {
   return (
     <>
     <Header/>
-    <h1>ACCOUNT PAGE</h1>
-    <button onClick = {signOutUser}>Logout</button>
+    <h1 className="bg-cweam text-2xl flex justify-center font-bold text-soft-red pb-8">ACCOUNT PAGE</h1>
+    <div className="bg-cweam pb-4 flex justify-center">
+      <ProButton onClick = {signOutUser} label = {'Logout'}/>
+    </div>
     <Footer/>
     </>
   )
