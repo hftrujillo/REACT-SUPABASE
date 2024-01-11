@@ -18,37 +18,11 @@ const CreateAccount = () => {
     }
   })
 
-  const signOutUser = async () => {
-
-    try {
-      const { error } = await supabase.auth.signOut();
-
-      if (error) {
-        throw error;
-      } else {
-        console.log('User logged out successfully');
-        [
-          window.localStorage,
-          window.sessionStorage,
-        ].forEach((storage) => {
-          Object.entries(storage)
-            .forEach(([key]) => {
-              storage.removeItem(key)
-            })
-        })
-        navigate('/Home');
-      }
-    } catch (error) {
-      console.log('Error logging out: ', error.message);
-    }
-  }
-
   return (
     <div>
         <Header />
         <div className = "flex justify-center pb-5 bg-cweam">
         </div>
-        <button onClick = {signOutUser}>Logout</button>
         <Auth supabaseClient={supabase} providers={['google']} appearance={{
 
             extend: false,
