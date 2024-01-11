@@ -11,7 +11,7 @@ const Account = () => {
     <>
     <Header/>
     <h1>ACCOUNT PAGE</h1>
-    <ProButton label = "Logout" onClick = ""></ProButton>
+    <button onClick = ''>Logout</button>
     <Footer/>
     </>
   )
