@@ -1,8 +1,12 @@
 import Button from '../components/Button';
+import UserHeader from '../components/UserHeader';
 
 const Header = () => {
   return (
     <header className = "p-8 bg-[#FFF5E0]">
+      <div className = "flex flex-row justify-end">
+        <UserHeader/>
+      </div>
       <a href = "/">
       <div className = "flex flex-row items-center justify-center">
         <h1 className= "flex flex-col items-center font-bold text-3xl text-[#BB2525]">
