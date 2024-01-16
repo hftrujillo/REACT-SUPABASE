@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className = "p-8 bg-[#FFF5E0]">
       <div className = "flex flex-row justify-end">
-        <UserHeader/>
+        {/*<UserHeader/>*/}
       </div>
       <a href = "/">
       <div className = "flex flex-row items-center justify-center">

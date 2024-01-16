@@ -1,9 +1,10 @@
 import { Header, Footer } from '../sections';
 import { Auth } from '@supabase/auth-ui-react';
 import { supabase } from '../Supabase';
-import ProButton from '../components/ProButton';
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import ProButton from '../components/ProButton';
+import AccountCard from '../components/AccountCard'
 
 const Account = () => {
 
@@ -51,6 +52,7 @@ const Account = () => {
     <div className="bg-cweam pb-4 flex justify-center">
       <ProButton onClick = {signOutUser} label = {'Logout'}/>
     </div>
+    <AccountCard/>
     <Footer/>
     </>
   )
